@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Expandable Recycler</string>
+    <string name="video_name">Sample Video</string>
+    <string name="document_name">Document Name</string>
+    <string name="author_name">Author Name</string>
+    <string name="sample_list">Sample List</string>
+</resources>

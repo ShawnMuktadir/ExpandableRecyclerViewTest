@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivTitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="visible"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:padding="@dimen/app_padding_secondary"
+                        android:text="@string/sample_list"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@android:color/black" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvTitle_author_1_1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="@dimen/app_padding_secondary"-->
+<!--                        android:text="@string/author_name"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="@dimen/dimTex12" />-->
+
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_radius"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/chapter_one_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/ivVideo_1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/tvVideo_1_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/video_name"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal"
+                            android:weightSum="1.5">
+
+                            <ImageView
+                                android:id="@+id/ivDocument_1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvDocument_1_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/document_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/dimTex16" />
+
+
+                                <TextView
+                                    android:id="@+id/tvDocument_author_1_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/author_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/dimTex12" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivVideo_1_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/tvVideo_1_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/video_name"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chapter_two_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal"
+                            android:weightSum="1.5">
+
+                            <ImageView
+                                android:id="@+id/ivDocument_2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvDocument_2_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/document_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/dimTex16" />
+
+
+                                <TextView
+                                    android:id="@+id/tvDocument_author_2_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/author_name"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/dimTex12" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/ivVideo_2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/tvVideo_2_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/video_name"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dim40"
+                            android:layout_marginBottom="@dimen/dim5"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/ivVideo_2_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <TextView
+                                android:id="@+id/tvVideo_2_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/video_name"
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAudio_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Audio 2_2"
+                            android:textSize="@dimen/dimTex16"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/video_three_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivVideo_3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvVideo_3_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/video_name"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_four_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_three_layout"
+        android:layout_marginTop="@dimen/dim5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDocument_4_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDocument_4_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/document_name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tvDocument_author_4_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/author_name"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
